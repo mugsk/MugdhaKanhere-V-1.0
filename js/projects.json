@@ -1,0 +1,138 @@
+{
+    "projects" :[
+
+        {
+            "id" : "1",
+            "image" : "img/TMScreens.jpg",
+            "title" : "TravelMate",
+            "subtitle" : "iPhone App Design",
+            "technologies" : "HTML, CSS, Bootstrap, jQuery",
+            "description" :"'TravelMate' is an engaging iPhone app for planning trips. It gives users the ability to post travel related questions to get advise from friends who may have visited/lived in those places. The process was divided into different stages:1. Brainstorming & User Research2. Paper Sketches 3. Low fidelity Mockups 4.Working Prototype in FluidUI and Photoshop 5. Usability Testing",
+            "github" : "https://github.com/mugsk/TravelMate-Screenshots.git",
+            "url" : ""
+
+        },
+
+        {
+            "id" : "2",
+            "image" : "img/schoolManagerResponsive.jpg",
+            "title" : "School Manager",
+            "subtitle" : "Responsive Marketing Website",
+            "technologies" : "HTML, CSS, Bootstrap, jQuery",
+            "description" :"Designed and developed a responsive marketing website using Bootstrap framework for SchoolManager, a distributed web-based software solution currently available to a few schools in Nigeria.",
+            "github" : "https://github.com/mugsk/SchoolManager",
+            "url" : "http://www.mugdhakanhere.com/SchoolManger/index.html"
+        },
+
+        {
+            "id" : "3",
+            "image" : "img/SustainableEarth.png",
+            "title" : "Sustainable Earth",
+            "subtitle" : "Illustrative website on environmental awareness",
+            "technologies" : "HTML5, CSS, Bootstrap",
+            "description" :"Informative website to illustrate an individual's role in maintaining a sustainable earth.Technologies: CSS3 animations and HTML5 ",
+            "github" : "https://github.com/mugsk/SustainableEarthIllustration",
+            "url" : "http://www.mugdhakanhere.com/SustainableEarth/"
+        },
+        {
+            "id" : "4",
+            "image" : "img/small_zeroandone.jpg",
+            "title" : "Zero&One",
+            "subtitle" : "Company Website",
+            "technologies" : "HTML, CSS, Bootstrap, jQuery",
+            "description" :"Customized existing Bootstrap template with company branding requirements and content and images provided.",
+            "github" : "https://github.com/mugsk/Zero-One.git",
+            "url" : "http://www.mugdhakanhere.com/SchoolManger/ZeroOneTechnologies/index.html"
+        },
+        {
+            "id" : "5",
+            "image" : "img/DreamTravels.png",
+            "title" : "Dream Travels",
+            "subtitle" : "Website for a fictional Travel Agency",
+            "technologies" : "HTML5, CSS, Bootstrap",
+            "description" :"Travel website for a company to showcase best packages and best deals on offer to its users",
+            "github" : "",
+            "url" : "http://www.mugdhakanhere.com/Assignment-1-HTML5/"
+        },
+
+
+
+        {
+            "id" : "6",
+            "image" : "img/TravelJournal.png",
+            "title" : "Travel Journal",
+            "subtitle" : "iPhone App to record trip memories",
+            "technologies" : "Objective-C, Xcode",
+            "description" :"Designed and developed an app that allows a user to capture his travel experiences in a journal format on his iPhone. ",
+            "github" : "https://github.com/mugsk/finalproj1",
+            "url" : ""
+        },
+        {
+            "id" : "7",
+            "image" : "img/Facebook.png",
+            "title" : "iThink",
+            "subtitle" : "Facebook Application",
+            "technologies" : "PHP, PostgreSQL, HTML, CSS",
+            "description" :" 'iThink' is an innovative Facebook application to post and share reviews among friends for movies, restaurants, tech gadgets and books.Features : Integrated app with Google Maps, Google Books and Google Search functionality to enhance usability. ",
+            "github" : "https://github.com/mugsk/FacebookApplication.git",
+            "url" : ""
+        },
+
+        {
+            "id" : "8",
+            "image" : "img/WeatherForecast.png",
+            "title" : "Weekly Weather Forecast",
+            "subtitle" : "Determine the weather forecast for the city of your choice",
+            "technologies" : "HTML, CSS, AngularJS, openweathermap API",
+            "description" :" Single page application to determine the weather forecast for the next 2/5/7 days based on the city entered by user. The app is integrated with the OpenWeathermap API using AngularJS",
+            "github" : "https://github.com/mugsk/weather-forecast-spa.git",
+            "url" : "http://www.mugdhakanhere.com/WeatherForecast"
+        },
+
+        {
+            "id" : "9",
+            "image" : "img/Disha.png",
+            "title" : "Disha",
+            "subtitle" : "Website for a Non-Profit organization",
+            "technologies" : " HTML, CSS3",
+            "description" :" Designed a simple website using Adobe Fonts for a fictional Non-Profit Organization ",
+            "github" : "https://github.com/mugsk/FacebookApplication.git",
+            "url" : "http://www.mugdhakanhere.com/CSS3-Assignment-2/"
+        },
+        {
+            "id" : "10",
+            "image" : "img/small_insurance_tool.jpg",
+            "title" : "Insurance Tool Picker",
+            "subtitle" : "Single page interface design with breadcrumb navigation",
+            "technologies" : "HTML, CSS, javaScript, jQuery",
+            "description" :" Single page application developed based on given design and functional specifications.Main Features : Breadcrumb navigation using jQuery, form validation, ability to add multiple insurers.",
+            "github" : "https://github.com/mugsk/InsuranceToolPicker.git",
+            "url" : "http://www.mugdhakanhere.com/InsuranceTool/#mainScreen"
+        },
+        {
+            "id" : "11",
+            "image" : "img/Surfsite.png",
+            "title" : "Chronic Surfing Co.",
+            "subtitle" : "Mockup for a Surfsite company in Photoshop",
+            "technologies" : "Adobe Photoshop",
+            "description" :"Mock up for a fictional surf site company created using Adobe Photoshop.",
+            "github" : "",
+            "url" : ""
+        },
+
+        {
+            "id" : "12",
+            "image" : "img/floral-creations.png",
+            "title" : "Floral Creations",
+            "subtitle" : "Template for a Simple Floral company",
+            "technologies" : " HTML, CSS",
+            "description" :"  A simple website designed and created in HTML and CSS(3) for a fictional Floral Company. ",
+            "github" : "https://github.com/mugsk/FloralCreations.git",
+            "url" : ""
+        }
+
+
+
+
+    ]
+}

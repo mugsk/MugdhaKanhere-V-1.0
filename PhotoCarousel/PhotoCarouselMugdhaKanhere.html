@@ -1,0 +1,145 @@
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/html4/loose.dtd">
+        <html>
+        <head>
+            <title>Assignment 2</title>
+            <style>
+                body {
+                    min-height: 460px; background-color: #1c1c1c;
+                    font: 14px Arial, Helvetica;
+                }
+                #carousel {
+                    margin: auto; margin-top: 40px; padding: 5px;
+                    width: 600px; height: 450px;
+                    border:  1px solid #5c5c5c; border-radius: 5px;
+                    -moz-box-shadow: 0px 0px 25px rgba(255,255,255,.5);
+                    position: relative;
+                }
+                #keyPad {
+                    width: 598px; height: 50px;
+                    position: absolute; bottom: 5px; left:5px;
+                    border: 1px solid #3f3f3f;
+                    border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-color: #1f1f1f;
+                }
+                #navBar { text-align: center; margin-top: 15px; color: #5c5c5c; }
+                #navBar a { color: #5c5c5c; text-decoration: none; text-shadow: -1px -1px #000; margin: 0 15px; }
+                #viewPort{
+                    overflow: hidden;
+                }
+                #photo{
+                    position: relative;
+                }
+
+
+            </style>
+        </head>
+        <body>
+        <div id="carousel">
+            <div id="viewPort">
+
+                    <img id="photo" src=""/>
+
+            </div>
+            <div id="keyPad">
+                <div id="navBar"><a href="prev">Prev</a>|<a href="next">Next</a></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+        <script>
+
+
+            $(document).ready(
+
+            function(){
+                // Preloading the images for the photo carousel
+                var preloadPhotos = ['img/image1.jpg',
+                                     'img/image2.jpg',
+                                     'img/image3.jpg',
+                                     'img/image4.jpg'];
+                var imgs = [];
+
+                for(var i=0; i< preloadPhotos.length; i++){
+
+                    imgs[i] = new Image();
+                    imgs[i].src = preloadPhotos[i];
+                }
+                var numOfImages = imgs.length;
+
+                //Initializing the first photo
+                $("#photo").attr('src',imgs[0].src);
+
+                // Binding click event for 'next'
+
+                 $("a[href='next']").bind("click",function(e) {
+                     e.preventDefault();
+
+                     //adding animation and replacing currentPhoto with newPhoto
+                     var currentPhoto = $("#photo");
+
+                     currentPhoto.animate({left:"-=600px"},170,function(){
+                            $(this).remove();
+                            var currentPhotoSrc = currentPhoto.attr('src');
+
+                            for(var i=0; i<numOfImages-1; i++){
+
+                                 if(currentPhotoSrc == imgs[numOfImages-1].src ){
+                                     var newPhoto = $('<img id="photo" src="'+imgs[i].src+'">');
+                                     break;
+                                 }
+                                 if(currentPhotoSrc == imgs[i].src){
+                                     var newPhoto = $('<img id="photo" src="'+imgs[i+1].src+'">');
+                                     break;
+                                 }
+
+                             }
+
+                             $('#viewPort').append(newPhoto);
+                             $('#photo').animate({left:"0px"},170);
+
+                     });
+
+                 }); // end click
+
+                // Binding click event for 'prev'
+
+                $("a[href='prev']").bind("click",function(e) {
+                    e.preventDefault();
+
+                    var currentPhoto = $("#photo");
+                    currentPhoto.animate({right:"-=600px"},170,function(){
+
+                        $(this).remove();
+                        var currentPhotoSrc = currentPhoto.attr('src');
+
+                        for(var i=numOfImages-1; i>0; i--){
+                            if(currentPhotoSrc == imgs[0].src ){
+                                var newPhoto = $('<img id="photo" src="'+imgs[numOfImages-1].src+'">');
+                                break;
+                            }
+                            if(currentPhotoSrc == imgs[i].src){
+                                var newPhoto = $('<img id="photo" src="'+imgs[i-1].src+'">');
+                                break;
+                            }
+                        }
+
+                        $('#viewPort').append(newPhoto);
+                        $('#photo').animate({right:"0px"},170);
+
+                    });
+
+                }); // end click
+
+            }); // end ready
+        </script>
+        </body>
+        </html>
+
+
+
+        <!--
+
+        Create a photo carousel.
+        Add template within viewPort. Use attached four images.
+        Add JavaScript and jQuery to add behavior to the 'Prev' and 'Next' link.
+        -->
+

@@ -1,0 +1,290 @@
+<div id ="portfolio">
+
+<div class="project-gallery">
+<div class="sub-title">
+
+    <h3 class="text-center wow slideInDown"> My <span class="text-shadow" style="color: #FA8072; font-family: Papyrus, fantasy;">Portfolio</span></h3>
+    <h4 class="text-center  wow slideInDown" >Here are some of the projects I have worked on.</h4>
+    <hr/>
+</div>
+<!-- Header  : Sorting and Page controls -->
+
+<div class="header">
+
+
+    <div data-pagination="" data-num-pages="numPages()"
+         data-current-page="currentPage" data-max-size="maxSize"
+         data-boundary-links="true">
+        <h4>{{projects.length}} remain</h4>
+    </div>
+
+    <div class="sort">Sort Projects by
+        <select data-ng-model="orderList">
+
+            <option value="id">Newest</option>
+            <option value="-id">Oldest</option>
+
+        </select>
+    </div>
+
+</div>
+
+<div class="row" >
+
+    <div class="col-md-6" data-ng-repeat="project in filteredProjects | orderBy : orderList">
+        <div class="project"><h4 class="project-title">{{ project.title }}</h4><h4>{{ project.subtitle }}</h4>
+            <div id="{{ project.id }}">
+            <a href="SchoolManger/index.html" blank="_window" class="project-site-link">
+                <p style="color: #fff;"></p>
+                <img class="project-img" src="{{project.image}}"    alt="SchoolManager">
+            </a>
+
+
+            </div>
+
+            <p>{{ project.technologies }}
+
+           <a  data-ng-mouseover="displayDescription()" data-ng-mouseleave="hideDescription()" href="" class="info-link">
+
+               <img src="img/3-dots.png" style="background:  rgba(51,51,51,0.1); border-radius: 100px; padding : 3px" width="26" alt="github"></a>
+
+                <a href="{{ project.github }}" class="github-link"><img src="img/github42.png" style="background: #FA8072;    border-radius: 100px;" width="32" alt="github"></a>
+            </p>
+
+        </div>
+    </div>
+
+    <!--<div class="col-md-6">-->
+        <!--<p class="project-info">-->
+            <!--{{ project.description }}-->
+            <!--<br>-->
+            <!--{{ project.technologies }}-->
+        <!--</p>-->
+        <!--<input type="button" name="view" value="View Details" class="btn btn-warning btn-view-more btn-lg text-shadow">-->
+    <!--</div>-->
+</div>
+<!-- Footer Page controls -->
+
+
+<!--<div class="row">-->
+    <!--<div class="col-md-4">-->
+        <!--<div class="project"><h4 class="project-title">SchoolManager</h4><h4>Marketing website</h4>-->
+            <!--<a href="SchoolManger/index.html" class="project-site-link"><img class="project-img" src="img/features.png" alt="SchoolManager"></a>-->
+            <!--<p>HTML, CSS, Bootstrap, jQuery-->
+                <!--<a class="info-link"><img src="img/info.png" width="24" alt="github"></a>-->
+                <!--<a href="https://github.com/mugsk/SchoolManager.git" class="github-link"><img src="img/github-2.ico" width="24" alt="github"></a>-->
+            <!--</p>-->
+            <!--<p class="project-info animated rotateInUpLeft">-->
+                <!--Designed and developed a responsive marketing website using Bootstrap framework for SchoolManager, a distributed web-based software solution currently available to a few schools in Nigeria.-->
+                <!--<br><br><b>Framework :</b> Bootstrap-->
+                <!--<br><br><b>Technologies :</b> HTML, CSS, jQuery-->
+            <!--</p>-->
+        <!--</div>-->
+
+    <!--</div>-->
+    <!--<div class="col-md-4">-->
+        <!--<div class="project"><h4 class="project-title">TravelMate</h4><h4>iPhone App Design </h4>-->
+            <!--<div class="project-slideshow-img"> <a href="img/TravelMate.png"><img class="project-img" src="img/TravelMate.png" alt="Travel Mate"></a></div>-->
+            <!--<p>FluidUI, Balsamiq, Photoshop-->
+                <!--<a class="info-link"><img src="img/info.png" width="24" alt="github"></a>-->
+                <!--<a href="https://github.com/mugsk/SchoolManager.git" class="github-link"><img src="img/github-2.ico" width="24" alt="github"></a>-->
+            <!--</p>-->
+            <!--<p class="project-info animated rotateInUpLeft">-->
+                <!--"TravelMate" is an iPhone app for planning trips. It allows users to post travel related questions to get advise from friends who may have visited/lived in those places. The process was divided into different stages:<br><br>-->
+                <!--<br>1. Brainstorming & User Research-->
+                <!--<br>2. Paper Sketches-->
+                <!--<br>3. Wireframing - Balsamiq-->
+                <!--<br>4.Working Prototype in FluidUI and Photoshop-->
+                <!--<br>5. Usability Testing-->
+            <!--</p>-->
+            <!--<ul>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/Screen1.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/Screen2.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/Screen3.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/Screen4.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/Screen5.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/Screen6.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/Screen7.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/Screen8.png"></a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+    <!--<div class="col-md-4">-->
+        <!--<div class="project"><h4 class="project-title">Zero&amp;One</h4><h4>Company Website</h4>-->
+            <!--<a href="ZeroOneTechnologies/index.html" class="project-site-link"><img class="project-img" src="img/small_zeroandone.jpg" alt="Zero-one Technologies"></a>-->
+            <!--<p>HTML, CSS, Bootstrap-->
+                <!--<a class="info-link"><img src="img/info.png" width="24" alt="github"></a>-->
+                <!--<a href="https://github.com/mugsk/Zero-One.git" class="github-link"><img src="img/github-2.ico" width="24" alt="github"></a>-->
+            <!--</p>-->
+            <!--<p class="project-info animated rotateInUpLeft">-->
+                <!--Customized existing Bootstrap template with company branding requirements and content and images provided.-->
+                <!--<br><br><b>Framework :</b> Bootstrap-->
+                <!--<br><br><b>Technologies :</b> HTML, CSS, jQuery-->
+            <!--</p>-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+    <!--<div class="col-md-4">-->
+        <!--<div class="project"><h4 class="project-title">Dream Travels</h4><h4> Website for a fictional Travel Agency</h4>-->
+            <!--<a href="http://www.mugdhakanhere.com/Assignment-1-HTML5/" class="project-site-link"><img class="project-img" src="img/DreamTravels.png" alt="Sustainable Earth"></a>-->
+            <!--<p>HTML5, CSS, Bootstrap-->
+                <!--<a class="info-link"><img src="img/info.png" width="24" alt="github"></a>-->
+                <!--<a href="https://github.com/mugsk/SchoolManager.git" class="github-link"><img src="img/github-2.ico" width="24" alt="github"></a>-->
+            <!--</p>-->
+            <!--<p class="project-info animated rotateInUpLeft">-->
+                <!--Travel website for a fictional company.-->
+                <!--<br><br><b>Framework :</b> Bootstrap-->
+                <!--<br><br><b>Technologies :</b> HTML5, CSS-->
+            <!--</p>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+    <!--<div class="col-md-4">-->
+        <!--<div class="project"><h4 class="project-title">Sustainable Earth</h4><h4> Illustrative website on environmental awareness</h4>-->
+            <!--<a href="http://www.mugdhakanhere.com/SustainableEarth/" class="project-site-link"><img class="project-img" src="img/SustainableEarth.png" alt="Sustainable Earth"></a>-->
+            <!--<p>HTML, CSS, Bootstrap, jQuery-->
+                <!--<a class="info-link"><img src="img/info.png" width="24" alt="github"></a>-->
+                <!--<a href="https://github.com/mugsk/SchoolManager.git" class="github-link"><img src="img/github-2.ico" width="24" alt="github"></a>-->
+            <!--</p>-->
+            <!--<p class="project-info animated rotateInUpLeft">-->
+                <!--Informative website to illustrate an individual's role in maintaining a sustainable earth. Technologies:-->
+                <!--CSS3 animations and HTML5-->
+                <!--<br><br><b>Framework :</b> Bootstrap-->
+                <!--<br><br><b>Technologies :</b> HTML5, CSS3-->
+            <!--</p>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+
+
+
+    <!--<div class="col-md-4">-->
+        <!--<div class="project"><h4 class="project-title">Travel Journal</h4><h4>iPhone App to record trip memories</h4>-->
+            <!--<div class="project-slideshow-img"> <a href="img/WelcomeScreen.png"><img width="10%" class="project-img" src="img/WelcomeScreen.png" alt="Travel Journal"></a></div>-->
+            <!--<p>Objective-C, Xcode-->
+                <!--<a class="info-link"><img src="img/info.png" width="24" alt="github"></a>-->
+                <!--<a href="https://github.com/mugsk/SchoolManager.git" class="github-link"><img src="img/github-2.ico" width="24" alt="github"></a>-->
+            <!--</p>-->
+            <!--<p class="project-info animated rotateInUpLeft">-->
+                <!--Designed and developed an app that allows a user to capture his travel experiences-->
+                <!--in a journal format on his iPhone.-->
+                <!--<br><br><b>Objective-C, Xcode</b>-->
+
+            <!--</p>-->
+
+            <!--<ul>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/Profile.jpg"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/List.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/Edit.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/Entry.png"></a></li>-->
+            <!--</ul>-->
+
+        <!--</div>-->
+
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+    <!--<div class="col-md-4">-->
+        <!--<div class="project"><h4  class="project-title">iThink</h4><h4>Facebook Application</h4>-->
+            <!--<div class="project-slideshow-img"> <a href="img/posted-reviews.png"><img class="project-img" src="img/posted-reviews.png" alt="Facebook Application"></a></div>-->
+
+            <!--<p>PHP, PostgreSQL, HTML, CSS-->
+
+                <!--<a class="info-link"><img src="img/info.png" width="24" alt="github"></a>-->
+                <!--<a href="https://github.com/mugsk/FacebookApplication.git" class="github-link"><img src="img/github-2.ico" width="24" alt="github"></a>-->
+
+            <!--</p>-->
+            <!--<p class="project-info animated rotateInUpLeft">-->
+                <!--'iThink' is an innovative Facebook application to post and share reviews amongst friends for movies, restaurants, tech gadgets and books.-->
+                <!--<br><br> Features : Integrated app with Google Maps, Google Books and Google Search functionality to enhance usability.-->
+                <!--<br><br><b>Technologies :</b> PHP, HTML, CSS, JavaScript-->
+            <!--</p>-->
+            <!--<ul>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/homepage-ithink.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/posted-reviews.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/post-reviews.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/movie-review.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/posted-book-review.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/restaurant-review.png"></a></li>-->
+                <!--<li class="project-slideshow-img" style="display: hidden;"><a href="img/samsung-reviews.png"></a></li>-->
+            <!--</ul>-->
+
+
+
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-md-4">-->
+
+        <!--<div class="project"><h4  class="project-title">Disha</h4><h4>Website for a Non-Profit organization</h4>-->
+            <!--<a href="http://www.mugdhakanhere.com/CSS3-Assignment-2/" class="project-site-link"><img class="project-img" src="img/Disha.png" alt="Zero-one Technologies"></a>-->
+            <!--<p>HTML, CSS, Bootstrap-->
+                <!--<a class="info-link"><img src="img/info.png" width="24" alt="github"></a>-->
+                <!--<a href="https://github.com/mugsk/Zero-One.git" class="github-link"><img src="img/github-2.ico" width="24" alt="github"></a>-->
+            <!--</p>-->
+            <!--<p class="project-info animated rotateInUpLeft">-->
+                <!--Designed a simpel website using Adobe Fonts for a fictional Non-Profit Orgaization-->
+                <!--<br><br><b>Technologies :</b> HTML5, CSS3-->
+            <!--</p>-->
+
+
+
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-md-4">-->
+        <!--<div class="project"><h4 class="project-title">Floral Creations</h4><h4>Site design for a fictional company</h4>-->
+            <!--<a href="img/floral-creations.png" class="project-single-img"><img class="project-img" src="img/floral-creations.jpg" alt="FloralCreations"></a>-->
+            <!--<p>HTML, CSS(3)-->
+                <!--<a class="info-link"><img src="img/info.png" width="24" alt="github"></a>-->
+                <!--<a href="https://github.com/mugsk/FloralCreations.git" class="github-link"><img src="img/github-2.ico" width="24" alt="github"></a>-->
+            <!--</p>-->
+            <!--<p class="project-info animated rotateInUpLeft">-->
+                <!--A simple website designed and created in HTML and CSS(3) for a fictional Floral Company.-->
+                <!--<br><br><b>Framework :</b> No frameworks used.-->
+                <!--<br><b>Technologies :</b> HTML, CSS(3)-->
+            <!--</p>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="row">-->
+    <!--<div class="col-md-4">-->
+        <!--<div class="project"><h4 class="project-title">Insurance Tool Picker</h4><h4>Single page web application</h4>-->
+            <!--<a href="InsuranceTool/index.html" class="project-site-link"> <img class="project-img" src="img/small_insurance_tool.jpg" alt="InsuranceTool"></a>-->
+            <!--<p>HTML, CSS, javaScript, jQuery-->
+                <!--<a class="info-link"><img src="img/info.png" width="24" alt="github"></a>-->
+                <!--<a class="github-link" href="https://github.com/mugsk/InsuranceToolPicker.git"><img src="img/github-2.ico" width="24" alt="github"></a>-->
+            <!--</p>-->
+            <!--<p class="project-info animated rotateInUpLeft">-->
+                <!--Single page application developed based on given design and functional specifications.-->
+                <!--<br><br> Main Features : Breadcrumb navigation using jQuery, form validation, ability to add multiple insurers.-->
+
+                <!--<br><br>Technologies : HTML, CSS, JavaScript, jQuery-->
+            <!--</p>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+    <!--<div class="col-md-4">-->
+        <!--<div class="project"><h4 class="project-title">Surfsite</h4><h4>Mockup for a fictional company</h4>-->
+            <!--<a href="img/surfsite-mockup.jpg" class="project-single-img"><img class="project-img" src="img/surfsite-mockup.jpg" alt="Surfsite"></a>-->
+            <!--<p>Photoshop-->
+                <!--<a class="disabled info-link"><img src="img/info.png" width="24" alt="github"></a>-->
+                <!--<a class="github-link"><img src="img/github-2.ico" width="24" alt="github"></a>-->
+            <!--</p>-->
+            <!--<p class="project-info animated rotateInUpLeft">-->
+
+                <!--Mock up for a fictional surf site company created using Adobe Photoshop.-->
+            <!--</p>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+
+</div>
+</div>

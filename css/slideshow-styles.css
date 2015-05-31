@@ -1,0 +1,292 @@
+body{
+  height: 600px;
+}
+/* Jumbotron
+================================ */
+.jumbotron{
+  display: block;
+  width: 100%;
+  height: 500px;
+  min-width : 300px;
+  min-height : 400px;
+  height : auto;
+  overflow: hidden;
+  padding : 0;
+  background-color : #000;
+}
+
+.jumbotron .container{
+
+  display: block;
+  width : 80%;
+  max-width:680px; 
+  height : 750px;
+  max-height : 20%;
+}
+
+.carousel-right {
+right: 0;
+left: auto;
+}
+
+.slideshow-1{
+
+    background : #000 url('../img/homepage-ithink.png') no-repeat center center;
+  -webkit-background-size : 100% auto;
+  -moz-background-size : 100% auto;
+  -o-background-size : 100% auto;
+  background-size : 100% auto;
+}
+
+.slideshow-2{
+  background : #000 url('../img/post-reviews.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+.slideshow-3{
+  background : #000  url('../img/book-review.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+.slideshow-4{
+  background : #000  url('../img/posted-book-review.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+
+.slideshow-5{
+  background : #000 url('../img/restaurant-review.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+.slideshow-6{
+  background : #000  url('../img/movie-review.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+.slideshow-7{
+   background : #000  url('../img/samsung-reviews.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+.slideshow-8{
+  background : #000  url('../img/posted-reviews.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+
+/* Carousel
+================================ */
+.carousel-inner{
+  display: block;
+  width : 1100px;
+  height : 667px;
+  max-width : 100%;
+  max-height : 100%;
+  /*min-width : 92.592593%;*/
+  height : auto;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+}
+.item{
+  display: block; 
+  width : 1100px;
+  height : 667px;
+  max-width : 100%;
+  max-height : 100%;
+  margin-top: 1%;
+  padding-top: 3%;
+}
+
+.carousel-inner h1{
+  color: #191919;
+  font-size: 1.9em;
+  font-family: 'Roboto','Helvetica', sans-serif;
+  font-weight: normal;
+  padding: 1%;
+  max-width: 500px;
+  text-align: left; 
+  margin-top: 1%;
+  padding-bottom: 1%; 
+  margin-bottom: 0;
+  line-height: 1.2em;
+}
+.carousel-inner strong{
+  font: inherit;
+  font-weight: 300;
+    color: #000;
+    background-color: rgba(255,255,255,0);
+}
+.carousel-inner .main-intro{
+  max-width: 450px; 
+  min-width: 150px;
+  text-align: justify;
+  font-size: 0.7em;
+/*  min-height: 150px;
+  max-height: 150px;*/  
+  padding: 1%;
+  line-height: 1.7em;
+  margin-top: 0;
+  color: #000;
+  font-weight: 300;
+    font-family: 'Roboto', 'Helvetica',sans-serif;
+  margin-bottom : 18%;
+
+}
+
+.carousel-inner .slideshow-2 .main-intro{
+  max-width: 450px; 
+  min-width: 150px;
+  text-align: justify;
+  font-size: 0.7em; 
+  padding: 1%;
+  line-height: 1.7em;
+  margin-top: 0;
+  margin-left: 50%;
+  color: #fff;
+  font-weight: 300;
+  font-family: 'Roboto','Helvetica',sans-serif;
+  margin-bottom : 18%;
+
+}
+.carousel-inner .slideshow-2 h1{
+  color: #fff;
+  font-size: 36px;
+  font-family: 'Roboto','Helvetica', sans-serif;
+  font-weight: normal;
+  padding: 1%;
+  max-width: 500px;
+  margin-left: 50%;
+  text-align: left; 
+  margin-top: 1%;
+  padding-bottom: 1%; 
+  margin-bottom: 0;
+  line-height: 1.2em;
+}
+
+.carousel-indicators {
+  bottom: 0;
+}
+
+.carousel-indicators .active {
+  background-color: #222;
+}
+
+.carousel-indicators li {
+  border-color: #222;
+}
+
+.carousel img{
+  top :0;
+    width: 100%;
+    height: auto;
+  max-height: 347px;
+    margin : 0 auto; 
+}
+
+@media screen and (max-width: 600px){
+
+.slideshow-1{
+
+    background : #000 url('../img/homepage-ithink.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size :contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+.slideshow-2{
+  background : #000 url('../img/post-reviews.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+.slideshow-3{
+  background : #000  url('../img/book-review.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+.slideshow-4{
+  background : #000  url('../img/posted-book-review.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+
+.slideshow-5{
+  background : #000 url('../img/restaurant-review.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+.slideshow-6{
+  background : #000  url('../img/movie-review.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+.slideshow-7{
+   background : #000  url('../img/samsung-reviews.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+.slideshow-8{
+  background : #000  url('../img/posted-reviews.png') no-repeat center center;
+  -webkit-background-size : contain;
+  -moz-background-size : contain;
+  -o-background-size : contain;
+  background-size : contain;
+}
+
+ .jumbotron .container{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 600px;
+  }
+
+    .carousel-inner{
+  
+    width: 100%;
+    height: 600px;
+    margin-top: 2%;
+  }
+
+}
+
